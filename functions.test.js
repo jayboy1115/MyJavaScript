@@ -6,6 +6,9 @@ const{findFirstDuplicate}= require("./Task5.js");
 const{reverseArray}= require("./Task6.js");
 const{factorial}= require("./Task7.js");
 const{isPalindrome}= require("./Task8.js");
+const{sumMultiplesOfThreeAndFive}= require("./Task9.js");
+const{isLeapYear}= require("./Task10.js");
+
 
 
 
@@ -74,3 +77,22 @@ let str = ("johnson");
 let result = isPalindrome(str);
 expect(result).toBe(false); 
 })
+
+test("sum the multiples of three and five", ()=>{
+let multiples = (10);
+let result = sumMultiplesOfThreeAndFive(multiples);
+expect(result).toBe(23); 
+})
+
+test("check if year is leap year", ()=>{
+let year = (2020);
+let result = isLeapYear(year);
+expect(result).toBe(true); 
+})
+
+test("check if year is leap year", ()=>{
+let year = (2019);
+let result = isLeapYear(year);
+expect(result).toBe(false); 
+})
+
